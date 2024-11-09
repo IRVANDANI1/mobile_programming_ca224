@@ -1,6 +1,6 @@
-# mobile_programming_ca224
+# IRVANDANI (220040021)
 
-A new Flutter project.
+[A new Flutter project.](https://github.com/IRVANDANI1/mobile_programming_ca224/blob/Pertemuan02/assets/02.png)
 
 ## Getting Started
 

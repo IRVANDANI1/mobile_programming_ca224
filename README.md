@@ -1,6 +1,7 @@
-# mobile_programming_ca224
+# IRVANDANI (220040021)
 
-A new Flutter project.
+![Screenshot 2024-10-29 090227](https://github.com/user-attachments/assets/b6812e8b-991d-4c3c-a079-4fca0df31064)
+
 
 ## Getting Started
 

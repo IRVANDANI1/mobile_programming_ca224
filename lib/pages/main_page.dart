@@ -2,7 +2,9 @@ import 'package:faker/faker.dart' as faker;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_programming_ca224/models/moment.dart';
+import 'package:mobile_programming_ca224/pages/create_comment_page.dart';
 import 'package:mobile_programming_ca224/pages/home_page.dart';
+import 'package:mobile_programming_ca224/pages/search_page.dart';
 import 'package:mobile_programming_ca224/resources/colors.dart';
 import 'package:nanoid2/nanoid2.dart';
 
@@ -51,8 +53,8 @@ class _MainPageState extends State<MainPage> {
     // List widget untuk setiap page
     final List<Widget> pages = [
       HomePage(moments: _moments),
-      const Center(child: Text('This is the search page.')),
-      const Center(child: Text('This is the create page.')),
+      SearchPage(moments: _moments),
+      CreateCommentPage(moments: _moments),
       const Center(child: Text('This is the activity page.')),
       const Center(child: Text('This is the profile page.')),
     ];

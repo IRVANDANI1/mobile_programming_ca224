@@ -2,7 +2,6 @@ import 'package:faker/faker.dart' as faker;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_programming_ca224/models/moment.dart';
-import 'package:mobile_programming_ca224/pages/create_comment_page.dart';
 import 'package:mobile_programming_ca224/pages/home_page.dart';
 import 'package:mobile_programming_ca224/pages/search_page.dart';
 import 'package:mobile_programming_ca224/resources/colors.dart';
@@ -54,7 +53,7 @@ class _MainPageState extends State<MainPage> {
     final List<Widget> pages = [
       HomePage(moments: _moments),
       SearchPage(moments: _moments),
-      CreateCommentPage(moments: _moments),
+      const Center(child: Text('This is the create page.')),
       const Center(child: Text('This is the activity page.')),
       const Center(child: Text('This is the profile page.')),
     ];

@@ -1,30 +1,38 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
+import 'package:mobile_programming_ca224/provider/provider.dart';
 import 'package:mobile_programming_ca224/main.dart';
+import 'package:mobile_programming_ca224/provider/country_provider.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Tambah Negara baru dan tampilkan', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      ChangeNotifierProvider(
+        create: (context) => CountryProvider(),
+        child: MyApp(),
+      ),
+    );
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Memastikan tombol add muncul
+    expect(find.byIcon(Icons.add), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
+    // Tap untuk membuka FormScreen
     await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Mengisi form
+    await tester.enterText(find.byType(TextFormField).at(0), 'ID');
+    await tester.enterText(find.byType(TextFormField).at(1), 'Indonesia');
+    await tester.enterText(
+        find.byType(TextFormField).at(2), 'Negara kepulauan');
+    await tester.enterText(
+        find.byType(TextFormField).at(3), 'assets/images/indonesia.png');
+
+    // Tap tombol Simpan
+    await tester.tap(find.text('Simpan'));
+    await tester.pumpAndSettle();
+
+    // Memastikan negara ditambahkan
+    expect(find.text('Indonesia'), findsOneWidget);
   });
 }

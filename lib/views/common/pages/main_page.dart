@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_programming_ca224/models/moment.dart';
-import 'package:mobile_programming_ca224/pages/home_page.dart';
-import 'package:mobile_programming_ca224/pages/moment_entry_page.dart';
-import 'package:mobile_programming_ca224/resources/colors.dart';
+import 'package:mobile_programming_ca224/views/moment/pages/home_page.dart';
+import 'package:mobile_programming_ca224/views/moment/pages/moment_entry_page.dart';
+import 'package:mobile_programming_ca224/core/resources/colors.dart';
 import 'package:nanoid2/nanoid2.dart';
 
 class MainPage extends StatefulWidget {

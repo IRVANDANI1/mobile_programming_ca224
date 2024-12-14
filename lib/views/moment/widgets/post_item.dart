@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_programming_ca224/models/moment.dart';
-import 'package:mobile_programming_ca224/resources/dimensions.dart';
-import 'package:mobile_programming_ca224/widgets/post_action_list.dart';
-import 'package:mobile_programming_ca224/widgets/post_header.dart';
+import 'package:mobile_programming_ca224/core/resources/dimensions.dart';
+import 'package:mobile_programming_ca224/views/moment/widgets/post_action_list.dart';
+import 'package:mobile_programming_ca224/views/moment/widgets/post_header.dart';
 
 class PostItem extends StatelessWidget {
   const PostItem({
     super.key,
     required this.moment,
-    required this.onUpdate,
-    required this.onDelete,
   });
 
   final Moment moment;
-  final Function(Moment) onUpdate;
-  final Function(Moment) onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -37,19 +33,11 @@ class PostItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            PostHeader(
-              momentItem: moment,
-              onUpdate: onUpdate,
-              onDelete: onDelete,
-            ),
+            PostHeader(momentItem: moment),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                PostActionList(
-                  likeCount: moment.likesCount,
-                  commentCount: moment.commentsCount,
-                  bookmarkCount: moment.bookmarksCount,
-                ),
+                PostActionList(momentItem: moment),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(
                     largeSize,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../models/moment.dart';
-import '../../../comment/pages/comment_page.dart';
+import '../../../models/moment.dart';
+import '../../comment/pages/comment_page.dart';
 import 'post_action.dart';
 
 class PostActionList extends StatelessWidget {

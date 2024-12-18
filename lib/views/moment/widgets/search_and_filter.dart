@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/resources/dimensions.dart';
+import '../../../core/resources/dimensions.dart';
 
 class SearchAndFilter extends StatefulWidget {
   const SearchAndFilter({

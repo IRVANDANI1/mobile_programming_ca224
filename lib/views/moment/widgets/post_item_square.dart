@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/resources/dimensions.dart';
+import '../../../core/resources/dimensions.dart';
 
 class PostItemSquare extends StatelessWidget {
   const PostItemSquare({super.key, required this.imageUrl});

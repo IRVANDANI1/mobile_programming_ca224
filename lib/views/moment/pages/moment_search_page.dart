@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mobile_programming_ca224/views/moment/bloc/moment_bloc.dart';
 
-import '../../../../core/resources/dimensions.dart';
+import '../../../core/resources/dimensions.dart';
 import '../widgets/post_item_square.dart';
 import '../widgets/search_and_filter.dart';
 

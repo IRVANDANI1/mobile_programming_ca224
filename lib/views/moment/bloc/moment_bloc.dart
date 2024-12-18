@@ -7,7 +7,7 @@ import 'package:nanoid2/nanoid2.dart';
 // ignore: depend_on_referenced_packages
 import 'package:collection/collection.dart';
 
-import '../../../../models/moment.dart';
+import '../../../models/moment.dart';
 
 part 'moment_event.dart';
 part 'moment_state.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../models/moment.dart';
+import '../../../models/moment.dart';
 import '../bloc/moment_bloc.dart';
 
 class PostHeader extends StatelessWidget {

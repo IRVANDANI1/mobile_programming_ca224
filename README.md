@@ -1,6 +1,6 @@
 # IRVANDANI(220040021)
 
-A new Flutter project.
+![Screenshot 2024-12-19 211458](https://github.com/user-attachments/assets/117da828-6b1d-488a-87f5-8c022a2d4150)
 
 ## Getting Started
 

@@ -109,6 +109,12 @@ class _MomentEntryPageState extends State<MomentEntryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+          onPressed: () {
+            context.read<MomentBloc>().add(MomentNavigateBackEvent());
+          },
+        ),
         title: Text('${widget.momentId != null ? 'Update' : 'Create'} Moment'),
         centerTitle: true,
       ),

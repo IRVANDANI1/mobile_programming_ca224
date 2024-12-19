@@ -1,6 +1,6 @@
 # mobile_programming_ca224
 
-A new Flutter project.
+![Screenshot 2024-12-19 123649](https://github.com/user-attachments/assets/4c5a4250-50f7-4afa-b77f-c27065876d96)
 
 ## Getting Started
 

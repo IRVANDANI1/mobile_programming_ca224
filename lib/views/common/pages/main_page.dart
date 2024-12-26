@@ -8,9 +8,10 @@ import 'package:mobile_programming_ca224/core/resources/colors.dart';
 import 'package:mobile_programming_ca224/views/moment/pages/moment_search_page.dart';
 
 import '../../moment/bloc/moment_bloc.dart';
+import '../../user/pages/user_page.dart';
 
 class MainPage extends StatefulWidget {
-  static const routeName = '/';
+  static const routeName = '/home';
   const MainPage({super.key});
 
   @override
@@ -49,7 +50,7 @@ class _MainPageState extends State<MainPage> {
       const MomentSearchPage(),
       const Center(child: Text('This is the create page.')),
       const Center(child: Text('This is the activity page.')),
-      const Center(child: Text('This is the profile page.')),
+      const UserPage(),
     ];
     return Scaffold(
       appBar: AppBar(
